@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pressure Differential Blast Freezer Airflow</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="deck">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="kicker">Blast Freezing Principle</span>
+        <h1>Pressure Differential Airflow</h1>
+        <p>
+          A high-volume evaporator fan wall creates a controlled pressure difference,
+          forcing cold air through the product load for faster and more uniform freezing.
+        </p>
+      </div>
+      <div class="hero-badges">
+        <div><b>Forced-through</b><span>Air path</span></div>
+        <div><b>Uniform</b><span>Product core cooling</span></div>
+        <div><b>Shorter</b><span>Freeze cycle</span></div>
+      </div>
+    </section>
+
+    <section class="showcase">
+      <div class="simulation-card">
+        <div class="sim-header">
+          <div>
+            <span class="system-dot"></span>
+            <b>Live airflow simulation</b>
+          </div>
+          <small>Pressure side -> product tunnel -> return side -> evaporator coil</small>
+        </div>
+
+        <div class="sim">
+          <div class="label-pill low-side">
+            <b>Low Pressure Return Side</b>
+            <span>Warmer air is pulled back through the coil.</span>
+          </div>
+          <div class="label-pill high-side">
+            <b>High Pressure Supply Side</b>
+            <span>Cold air is pushed toward the product tunnel.</span>
+          </div>
+
+          <div class="fan-wall">
+            <div class="fan"><i></i></div>
+            <div class="fan"><i></i></div>
+            <div class="fan"><i></i></div>
+            <div class="coil-lines"><span></span><span></span><span></span><span></span><span></span></div>
+            <strong>Evaporator Coil<br>+ Fan Wall</strong>
+          </div>
+
+          <div class="seal-panel">
+            <b>Pressure Seal</b>
+            <span>Separates supply and return air.</span>
+          </div>
+
+          <div class="product-tunnel">
+            <div class="tunnel-title">Product Tunnel</div>
+            <div class="rack rack-1">
+              <i></i><i></i><i></i><i></i>
+              <span>Warm load</span>
+            </div>
+            <div class="rack rack-2">
+              <i></i><i></i><i></i><i></i>
+              <span>Air penetrates</span>
+            </div>
+            <div class="rack rack-3">
+              <i></i><i></i><i></i><i></i>
+              <span>Frozen uniformly</span>
+            </div>
+          </div>
+
+          <svg class="air-svg" viewBox="0 0 1200 620" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="supplyGradient" x1="0" x2="1">
+                <stop offset="0%" stop-color="#b8efff"/>
+                <stop offset="100%" stop-color="#0b7cff"/>
+              </linearGradient>
+              <marker id="coldArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                <path d="M0,0 L10,5 L0,10 Z" fill="#28a8ff"/>
+              </marker>
+              <marker id="returnArrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                <path d="M0,0 L10,5 L0,10 Z" fill="#ff8b3d"/>
+              </marker>
+            </defs>
+
+            <path class="air-line supply s1" d="M250,185 C405,130 650,125 1010,165" />
+            <path class="air-line supply s2" d="M250,290 C420,252 655,250 1010,282" />
+            <path class="air-line supply s3" d="M250,395 C420,430 650,426 1010,392" />
+
+            <path class="air-line through t1" d="M1005,170 C910,188 760,190 620,182" />
+            <path class="air-line through t2" d="M1005,285 C908,300 760,302 620,292" />
+            <path class="air-line through t3" d="M1005,390 C908,376 760,374 620,396" />
+
+            <path class="air-line return r1" d="M610,468 C485,504 330,488 205,438" />
+            <path class="air-line return r2" d="M620,545 C470,584 315,560 178,500" />
+
+            <circle class="molecule m1" r="6" />
+            <circle class="molecule m2" r="5" />
+            <circle class="molecule m3" r="5" />
+            <circle class="molecule m4" r="6" />
+            <circle class="molecule warm m5" r="6" />
+            <circle class="molecule warm m6" r="5" />
+          </svg>
+
+          <div class="legend supply-note">
+            <b>Cold supply air</b>
+            <span>Typical blast freezer air: -31 deg F to -40 deg F</span>
+          </div>
+          <div class="legend return-note">
+            <b>Return air</b>
+            <span>Heat removed from product returns to the evaporator coil.</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="story-card">
+        <div class="story-step active" data-step="1">
+          <span>01</span>
+          <div>
+            <h3>Build pressure difference</h3>
+            <p>The fan wall creates a high-pressure supply side and a low-pressure return side.</p>
+          </div>
+        </div>
+        <div class="story-step" data-step="2">
+          <span>02</span>
+          <div>
+            <h3>Force air through product gaps</h3>
+            <p>Air is guided through cartons, trays and pallet gaps instead of bypassing the load.</p>
+          </div>
+        </div>
+        <div class="story-step" data-step="3">
+          <span>03</span>
+          <div>
+            <h3>Remove heat from the product core</h3>
+            <p>Continuous cold airflow reduces surface temperature and pulls heat from the center.</p>
+          </div>
+        </div>
+        <div class="story-step" data-step="4">
+          <span>04</span>
+          <div>
+            <h3>Recirculate through the coil</h3>
+            <p>Warmer return air passes across the evaporator coil and is cooled again.</p>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="evidence">
+      <figure>
+        <img src="./assets/site-installation.jpg" alt="Pressure differential air cooler installed inside a freezer room">
+        <figcaption>Installed freezer room: the cooler wall forms a controlled pressure path.</figcaption>
+      </figure>
+      <figure>
+        <img src="./assets/air-cooler-unit.jpg" alt="Industrial evaporator coil with axial fans">
+        <figcaption>Equipment structure: large evaporator coil surface with high-volume axial fans.</figcaption>
+      </figure>
+      <div class="benefit-card">
+        <h2>Customer Benefit</h2>
+        <ul>
+          <li>More uniform product temperature across the pallet.</li>
+          <li>Less air bypass around the outside of the load.</li>
+          <li>Faster passage through the maximum ice crystal formation zone.</li>
+          <li>Better suited for tunnel-style blast freezing rooms.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="./vendor/gsap.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
